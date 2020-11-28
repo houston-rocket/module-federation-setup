@@ -1,0 +1,23 @@
+{
+  "name": "module-federatuion-setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && npm run serve",
+    "serve": "npx serve ./dist -l 9500 -C",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^4.5.0",
+    "serve": "^11.3.2",
+    "webpack": "^5.8.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "workspaces": [
+    "App1",
+    "App2"
+  ]
+}
